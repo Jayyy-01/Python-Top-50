@@ -1,0 +1,8 @@
+number = int(input('Enter the number to find the fibonacci series of it: '))
+a = 0
+b = 1 
+for i in range(number):
+  c = a + b
+  print(c, end = ' ')
+  a = b
+  b = c
