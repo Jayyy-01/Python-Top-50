@@ -1,0 +1,3 @@
+n = int(input('Enter a number to find it\'s square root: '))
+sq_root = n ** 0.5
+print("%.2f"%sq_root)
