@@ -1,0 +1,6 @@
+start_range = int(input("enter the start_range value: "))
+end_range = int(input("enter the end_range value: "))
+sum = 0
+for i in range(start_range , end_range+1):
+    sum = sum + i
+print(sum)
