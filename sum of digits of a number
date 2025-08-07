@@ -1,0 +1,8 @@
+num = int(input("enter the number: "))
+num = abs(num)
+sum = 0
+while num >0:
+    lastest_num = num % 10
+    sum = sum + lastest_num
+    num = num // 10
+print(f'sum is {sum}')
