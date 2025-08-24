@@ -1,0 +1,6 @@
+#finding max element
+max_num = li[0] #we assume the first number present in the list is max and we compare every other element with the first number
+for num in li:
+    if num > max_num:
+        max_num = num
+print(f'the maximum number is: {max_num}')
