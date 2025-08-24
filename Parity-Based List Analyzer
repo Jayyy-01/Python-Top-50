@@ -1,0 +1,40 @@
+li = list(map(int,input("enter the elements: ").split(" ")))
+print(li)
+total = 0
+for i in li:
+    total+=1
+print(total)
+even_sum = 0
+odd_sum = 0
+even_low = float('inf')
+even_high = float('-inf')
+odd_low = float('inf')
+odd_high = float('-inf')
+for i in li:
+    if i % 2 == 0:
+        even_sum+=i
+        if i < even_low:
+            even_low = i
+        if i > even_high:
+            even_high = i
+    else:
+        odd_sum+=i
+        if i < odd_low:
+            odd_low=i
+        if i > odd_high:
+            odd_high=i
+
+if total % 2 == 0:
+    print(f'the length of the list is: {total}')
+    print(f'the sum of even numbers is: {even_sum}')
+    print(f'lowest even number is: {even_low}')
+    print(f'highest even number is: {even_high}')
+else:
+    print(f'the length of the list is: {total}')
+    print(f'the sum of odd numbers is: {odd_sum}')
+    print(f'lowest odd number is: {odd_low}')
+    print(f'highest odd number is: {odd_high}')
+
+
+
+
