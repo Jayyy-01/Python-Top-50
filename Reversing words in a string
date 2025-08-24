@@ -1,0 +1,8 @@
+sent = input("enter the sentence: ")
+updated_sent = sent.split()
+total = 0
+for i in updated_sent:
+    total+=1
+print(total)
+for  i in range((total)-1,-1,-1):
+    print(updated_sent[i],end=" ")
